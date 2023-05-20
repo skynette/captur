@@ -21,20 +21,20 @@ const Slider = ({ slides }) => {
 	return (
 		<div id="gallery" className="max-w-[1240px] mx-auto">
 			<h1 className="text-2xl font-bold text-center p-4">Gallery</h1>
-			{slides.map((slide, index) => {
-				return (
-					<div key={index} className={index === current ? 'opacity-[1] ease-in duration-1000' : 'opacity-0'}>
-						<div className="relative flex justify-center p-4">
+			<div className="relative flex justify-center p-4">
+				{slides.map((slide, index) => {
+					return (
+						<div className={index === current ? 'opacity-[1] ease-in duration-1000' : 'opacity-0'} key={index}>
 							<FaArrowAltCircleLeft className="absolute top-[50%] left-[30px] text-white/70 cursor-pointer select-none z-[2]" size={50} onClick={nextSlide} />
 							{index === current && (
 								<Image src={slide.image} alt={slide.alt} width="1440" height="600" objectFit="cover" />
 							)}
 							<FaArrowAltCircleRight className="absolute top-[50%] right-[30px] text-white/70 cursor-pointer select-none z-[2]" size={50} onClick={prevSlide} />
 						</div>
-					</div>
-				)
-			})}
+					)
+				})}
 
+			</div>
 		</div>
 	)
 }
