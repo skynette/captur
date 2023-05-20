@@ -53,7 +53,7 @@ const Navbar = () => {
 				</ul>
 
 				{/* mobile button */}
-				<div className="block sm:hidden z-10">
+				<div className="block sm:hidden z-10" onClick={toggleMenu}>
 					{showMenu ? (
 						<AiOutlineClose size={20} style={{color: `${textColor}`}} />
 					) : (
