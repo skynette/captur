@@ -45,7 +45,7 @@ const Navbar = () => {
 						<Link href="/#gallery">Gallery</Link>
 					</li>
 					<li className="p-4">
-						<Link href="/portfolio">Portfolio</Link>
+						<Link href="/work">Portfolio</Link>
 					</li>
 					<li className="p-4">
 						<Link href="/contact">Contact</Link>
@@ -55,7 +55,7 @@ const Navbar = () => {
 				{/* mobile button */}
 				<div className="block sm:hidden z-10" onClick={toggleMenu}>
 					{showMenu ? (
-						<AiOutlineClose size={20} style={{color: `${textColor}`}} />
+						<AiOutlineClose size={20} style={{color: "white"}} />
 					) : (
 						<AiOutlineMenu size={20} style={{color: `${textColor}`}} />
 					)}
@@ -63,16 +63,16 @@ const Navbar = () => {
 				{/* mobile menu */}
 				<div className={showMenu ? "sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300" : "sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300"}>
 					<ul>
-						<li className="p-4 text-4xl hover:text-gray-500">
-							<Link href="/home">Home</Link>
+						<li onClick={toggleMenu} className="p-4 text-4xl hover:text-gray-500">
+							<Link href="/">Home</Link>
 						</li>
-						<li className="p-4 text-4xl hover:text-gray-500">
+						<li onClick={toggleMenu} className="p-4 text-4xl hover:text-gray-500">
 							<Link href="/#gallery">Gallery</Link>
 						</li>
-						<li className="p-4 text-4xl hover:text-gray-500">
-							<Link href="/portfolio">Portfolio</Link>
+						<li onClick={toggleMenu} className="p-4 text-4xl hover:text-gray-500">
+							<Link href="/work">Portfolio</Link>
 						</li>
-						<li className="p-4 text-4xl hover:text-gray-500">
+						<li onClick={toggleMenu} className="p-4 text-4xl hover:text-gray-500">
 							<Link href="/contact">Contact</Link>
 						</li>
 					</ul>
