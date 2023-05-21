@@ -1,34 +1,74 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Captur
+A landing page for photography built with Next.js and Tailwind CSS.
+![image](https://github.com/skynette/captur/assets/29153968/4b255436-7168-483b-8dbb-bdcc204617f6)
+
+## Description
+
+This project is a landing page template designed for photography websites. It is built using Next.js, a React framework for server-side rendering, and Tailwind CSS, a utility-first CSS framework.
+
+The landing page features a responsive layout, optimized for various devices, and incorporates modern design elements and animations to showcase photography portfolios.
+
+## Features
+
+-   Responsive design for seamless viewing across different devices.
+-   Modern and visually appealing user interface.
+-   Smooth scrolling.
+-   Image Lazy Loading
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+To run this project locally, you need to have Node.js and npm (Node Package Manager) installed on your machine.
+
+### Installation
+
+1.  Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
+	git clone https://github.com/skynette/captur.git
 ```
+2. Navigate to the project directory:
+```bash
+	cd captur
+```
+3. Install the dependencies:
+```bash
+	npm install
+```
+### Usage
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1.  Start the development server:
+```bash
+	npm run dev
+```
+2. Open your web browser and visit the following URL:
+```bash
+	http://localhost:3000
+```
+3.  Customize the landing page by modifying the source code and tailoring it to your photography business needs.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Deployment
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+To deploy the project to a production environment, follow these steps:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1.  Build the optimized production-ready assets:
+```bash
+	npm run build
+```
+2. Start the production server:
+```bash
+	npm run start
+```
+1.  The landing page will be accessible at the specified URL.
+    
 
-## Learn More
+## Contributing
 
-To learn more about Next.js, take a look at the following resources:
+Contributions are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Acknowledgements
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+-   [Next.js](https://nextjs.org/)
+-   [Tailwind CSS](https://tailwindcss.com/)
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Feel free to update and customize the template to provide accurate information about your specific landing page project.
